@@ -1,0 +1,116 @@
+.rooms-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.rooms-left {
+    width: 60%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.rooms-left img {
+    margin-top: 40px;
+    width: 100%; /* Ensure the image fits the container */
+    height: 100%; /* Maintain aspect ratio */
+}
+
+.image {
+    position: relative;
+    width: 50%; /* Control the width of the image container */
+    max-width: 500px; /* Maximum width for the image container */
+
+    margin: 0 auto; /* Center the image container */
+    overflow: hidden;
+}
+
+.image h5 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: white; /* Contrast the text against the image */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add a shadow for better readability */
+    margin: 0;
+    white-space: nowrap; /* Prevents text from wrapping */
+}
+
+.rooms-right {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(131, 32, 32);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-top: 70px;
+    padding-bottom: 30px; /* Added padding at the bottom for balance */
+    box-sizing: border-box; /* Ensures padding is included in width/height */
+}
+
+.top, .middle, .bottom {
+    width: 90%; /* Slightly reduced width for better alignment */
+    max-width: 1200px; /* Maximum width for larger screens */
+    height: auto; /* Allow content to determine height */
+    padding: 20px; /* Added padding for spacing */
+    background-color: rgba(255, 255, 255, 0.1); /* Subtle background for sections */
+    border-radius: 8px; /* Rounded corners for a smoother look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    text-align: center; /* Centered text alignment */
+}
+
+.top {
+    height: 150px;
+}
+
+.middle {
+    height: 200px;
+}
+
+.bottom {
+    height: 200px;
+}
+
+p {
+    font-size: 20px;
+    color: white;
+    margin: 0; /* Remove default margin */
+    line-height: 1.6; /* Improved readability */
+}
+
+@media (max-width:1000px) {
+    .rooms-left img {
+        margin-top: 40px;
+        width: 100%; /* Ensure the image fits the container */
+        height: auto; /* Maintain aspect ratio */
+    }
+    .image h5 {
+        font-size: 1.5rem;
+    }
+    
+.top {
+    height: 150px;
+}
+
+.middle {
+    height: 150px;
+}
+
+.bottom {
+    height: 150px;
+}
+p{
+    font-size: 15px;
+}
+}
+@media (max-width:750px) {
+    p{
+        font-size: 10px;
+    }
+}
